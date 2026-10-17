@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2D2A6E">
+<title>Peta halaman · TravelMlg (dummy)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+:root{--ink:#1E1B3A;--ink-2:#55527A;--line:#E4E2F5;--bg:#F7F6FF;--card:#fff;--night:#2D2A6E;--indigo:#3D35D1;--sun:#FF8A3D;--sun-tint:#FFE8D9;--sun-ink:#8A3B0A;--sky-tint:#E1EEFF;--sky-ink:#1B4F9C;--rose-tint:#FFE3EA;--rose-ink:#A3123F;--amber-tint:#FFF1CC;--amber-ink:#6E4A00;--leaf-tint:#DDF5EC;--leaf-ink:#0B5F45;--mist:#EEEDFF}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--indigo)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px;border-radius:8px}
+header{background:var(--night);color:#fff;padding:28px 20px 34px}
+header .in{max-width:1080px;margin:0 auto}
+header a{color:#fff;font-weight:700;text-decoration:none;display:inline-flex;gap:6px;align-items:center;min-height:44px}
+h1{font-size:34px;line-height:1.08;font-weight:800;letter-spacing:-.03em;margin:12px 0 8px;max-width:20ch}
+header p{margin:0;color:#CFCCF7;max-width:60ch;line-height:1.55}
+main{max-width:1080px;margin:0 auto;padding:24px 20px 48px}
+.start{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:22px}
+.lanes{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.lane{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px}
+.lane h2{margin:0 0 4px;font-size:18px;font-weight:800}
+.lane > p{margin:0 0 14px;font-size:13px;color:var(--ink-2);line-height:1.5}
+.flow{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.flow li{display:flex;flex-direction:column;align-items:stretch}
+.flow li + li::before{content:"";width:2px;height:18px;background:var(--line);margin:0 0 0 22px}
+.node{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--ink);padding:12px;border-radius:16px;border:1.5px solid var(--line);background:var(--bg);min-height:60px}
+.node:hover{border-color:var(--indigo)}
+.dot{width:32px;height:32px;border-radius:11px;display:grid;place-items:center;font-weight:800;font-size:13px;flex:0 0 auto}
+.sky{background:var(--sky-tint);color:var(--sky-ink)}.rose{background:var(--rose-tint);color:var(--rose-ink)}.amber{background:var(--amber-tint);color:var(--amber-ink)}.leaf{background:var(--leaf-tint);color:var(--leaf-ink)}.sun{background:var(--sun-tint);color:var(--sun-ink)}.mist{background:var(--mist);color:var(--indigo)}
+.node span{display:flex;flex-direction:column;gap:2px;font-size:12px;color:var(--ink-2)}
+.node span b{font-size:15px;color:var(--ink)}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:var(--card);border:1.5px solid var(--line);font-weight:700;font-size:14px;text-decoration:none;color:var(--ink);min-height:44px}
+.arrow{color:var(--ink-2);font-weight:700}
+.later{margin-top:28px;background:var(--card);border:1.5px dashed var(--line);border-radius:22px;padding:18px}
+.later h2{margin:0 0 8px;font-size:18px;font-weight:800}
+.later ul{margin:0;padding-left:20px;line-height:1.7;color:var(--ink-2);font-size:14px}
+.foot{margin-top:20px;font-size:13px;color:var(--ink-2);line-height:1.6}
+</style>
+</head>
+<body>
+<header><div class="in">
+  <a href="index.html#/beranda">← Buka app dummy</a>
+  <h1>Peta halaman Papan Slot</h1>
+  <p>Setiap kotak bisa diklik untuk langsung membuka halamannya. Alur dibagi menurut pekerjaan yang dilakukan pengguna, bukan menurut menu.</p>
+</div></header>
+<main>
+  <div class="start">
+    <a class="chip" href="index.html#/"><span class="dot mist">1</span>Pilih peran</a><span class="arrow" aria-hidden="true">→</span>
+    <a class="chip" href="index.html#/beranda"><span class="dot sun">2</span>Beranda</a><span class="arrow" aria-hidden="true">→</span>
+    <span class="chip" style="cursor:default">Tombol + di tengah membuka tiga jalur di bawah</span>
+  </div>
+
+  <div class="lanes">
+    <section class="lane">
+      <h2>Driver membuka slot</h2>
+      <p>Menggantikan pengumuman "ada kursi kosong" di grup WA.</p>
+      <ol class="flow">
+        <li><a class="node" href="index.html#/buka"><span class="dot sun">A</span><span><b>Buka slot baru</b>Rute, tanggal, jam, kursi, area</span></a></li>
+        <li><a class="node" href="index.html#/papan"><span class="dot rose">B</span><span><b>Papan slot</b>Tampil untuk semua anggota jaringan</span></a></li>
+        <li><a class="node" href="index.html#/slot/s2"><span class="dot rose">C</span><span><b>Detail slot</b>Denah kursi, penumpang, tutup slot</span></a></li>
+      </ol>
+    </section>
+
+    <section class="lane">
+      <h2>Agen mencarikan kursi ke bandara</h2>
+      <p>Fitur pembeda: jam berangkat dihitung dari jadwal pesawat.</p>
+      <ol class="flow">
+        <li><a class="node" href="index.html#/minta"><span class="dot sky">A</span><span><b>Penumpang ke bandara</b>Isi jadwal pesawat, sistem menghitung</span></a></li>
+        <li><a class="node" href="index.html#/cocok"><span class="dot sky">B</span><span><b>Slot yang cocok</b>Disaring sesuai rentang jam</span></a></li>
+        <li><a class="node" href="index.html#/aktivitas"><span class="dot leaf">C</span><span><b>Kursi diamankan</b>Kode pesanan, kirim ke penumpang</span></a></li>
+        <li><a class="node" href="index.html#/aktivitas"><span class="dot leaf">D</span><span><b>Aktivitas</b>Pesanan aktif dan riwayat</span></a></li>
+      </ol>
+    </section>
+
+    <section class="lane">
+      <h2>Rute antarkota</h2>
+      <p>Kediri, Blitar, Jember: lewat papan yang sama, disaring per rute.</p>
+      <ol class="flow">
+        <li><a class="node" href="index.html#/papan"><span class="dot rose">A</span><span><b>Papan slot</b>Pilih tanggal dan rute</span></a></li>
+        <li><a class="node" href="index.html#/slot/s3"><span class="dot rose">B</span><span><b>Detail slot</b>Lihat kursi, chat driver</span></a></li>
+      </ol>
+    </section>
+
+    <section class="lane">
+      <h2>Admin dan pengaturan</h2>
+      <p>Menjaga hanya mitra berizin yang tampil, dan mengatur aturan hitung jam.</p>
+      <ol class="flow">
+        <li><a class="node" href="index.html#/akun"><span class="dot mist">A</span><span><b>Akun</b>Jaringan saya, status izin mitra</span></a></li>
+        <li><a class="node" href="index.html#/akun"><span class="dot mist">B</span><span><b>Aturan hitung jam</b>Buffer bandara, waktu tempuh, akhir pekan</span></a></li>
+        <li><a class="node" href="index.html#/notif"><span class="dot amber">C</span><span><b>Notifikasi</b>Slot hampir penuh, kursi diambil</span></a></li>
+      </ol>
+    </section>
+  </div>
+
+  <section class="later">
+    <h2>Belum ada di dummy (versi berikutnya)</h2>
+    <ul>
+      <li>Data lalu lintas langsung lewat API peta, menggantikan angka waktu tempuh manual</li>
+      <li>Pembayaran di dalam app (selama trial tetap langsung ke mitra)</li>
+      <li>Akun dan login sungguhan, serta verifikasi dokumen izin mitra</li>
+      <li>Aplikasi untuk penumpang umum</li>
+    </ul>
+  </section>
+  <p class="foot">Dummy untuk trial jaringan travel Malang Raya. Semua nama, jam, dan slot adalah data contoh, bukan data nyata.</p>
+</main>
+</body>
+</html>
